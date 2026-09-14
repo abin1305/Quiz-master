@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Quiz Master</h1>
+            <p>Test your knowledge across various topics!</p>
+        </div>
+        <div class="content">
+            <div id="category-selection">
+                <div class="category-selection">
+                    <button class="category-btn" data-category="General Knowledge">General Knowledge</button>
+                    <button class="category-btn" data-category="Modern Experiments">Modern Experiments</button>
+                    <button class="category-btn" data-category="Space">Space</button>
+                    <button class="category-btn" data-category="Climate">Climate</button>
+                    <button class="category-btn" data-category="Geography">Geography</button>
+                    <button class="category-btn" data-category="Health">Health</button>
+                    <button class="category-btn" data-category="Vehicles">Vehicles</button>
+                    <button class="category-btn" data-category="New Technology">New Technology</button>
+                    <button class="category-btn" data-category="Artificial Intelligence">Artificial Intelligence</button>
+                    <button class="category-btn" data-category="Medicinal Plants">Medicinal Plants</button>
+                </div>
+            </div>
+
+            <section class="api-section" id="practice-section" aria-labelledby="api-title">
+                <h2 id="api-title">Practice Zone</h2>
+                <p>Try one live practice question from a public quiz API.</p>
+                <button class="btn" id="load-question" type="button">Get Practice Question</button>
+                <p id="api-question" aria-live="polite"></p>
+                <div class="api-options" id="api-options"></div>
+                <p id="api-result" aria-live="polite"></p>
+            </section>
+
+            <div id="quiz-section" class="quiz-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="timer" id="timer">Time: 30</div>
+                <div class="score" id="score">Score: 0</div>
+                <div class="question-container">
+                    <div class="question" id="question"></div>
+                    <div class="options" id="options"></div>
+                </div>
+                <div class="controls">
+                    <button class="btn" id="prev-btn" disabled>Previous</button>
+                    <button class="btn" id="next-btn" disabled>Next</button>
+                </div>
+                <div class="result" id="result"></div>
+                <button class="btn back-btn" id="back-to-categories">Back to Categories</button>
+            </div>
+
+            <div id="final-results" class="final-results">
+                <h2>Quiz Complete!</h2>
+                <div class="final-score" id="final-score"></div>
+                <p id="final-message"></p>
+                <button class="btn" id="restart-quiz">Take Another Quiz</button>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+   
+   
+
+ 
+ 
+ 
+ 
+ 
+ 
